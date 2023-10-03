@@ -1,0 +1,88 @@
+.nav-body {
+  height: 60px;
+}
+
+.rich-01 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-image: url(../img/2E_GAMING_OGAMA_II_UA/product-welcome-bg-1_1.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.block-rich-01 {
+  position: relative;
+  padding-top: 639px;
+  margin: 0 auto;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: url(../img/2E_GAMING_OGAMA_II_UA/OGAMA_RGB_1.jpg);
+}
+
+.block-container {
+  padding-left: 139px;
+  padding-right: 139px;
+}
+
+.title, .h1-text--title, .h1-text {
+  color: #FFF;
+  font-family: Russo One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.h1-text {
+  font-size: 60px;
+  line-height: 1.34;
+  text-align: right;
+}
+
+.h1-text--title {
+  color: rgba(255, 0, 0, 0.8);
+  text-align: right;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 58px;
+  left: 115px;
+  width: 149px;
+  height: 74px;
+  fill: #FFF;
+}
+
+.block-rich-02 {
+  padding-top: 35px;
+  padding-bottom: 246px;
+}
+
+.block-rich-02__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sub-title {
+  text-align: right;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-body__title {
+  text-align: right;
+  font-family: Russo One;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
