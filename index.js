@@ -1,6 +1,6 @@
-import richList from './index.json';
+// import richList from './index.json';
 
-const mainList = document.querySelector('.js-rich-list');
+// const mainList = document.querySelector('.js-rich-list');
 
-console.log(mainList);
-console.log(richList);
+// console.log(mainList);
+// console.log(richList);
