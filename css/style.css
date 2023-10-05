@@ -1,5 +1,41 @@
 .nav-body {
-  height: 60px;
+  height: 200px;
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.name {
+  color: #FFF;
+  font-family: Russo One;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.rich-list {
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.rich-item {
+  background-color: rgb(7, 175, 226);
+  color: #FFF;
 }
 
 .rich-01 {
@@ -80,13 +116,10 @@
   background: -webkit-gradient(linear, left bottom, left top, color-stop(82.81%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.98)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 82.81%, rgba(0, 0, 0, 0.98) 100%);
 }
-
-.rich-02-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 514px;
-  height: 956px;
+.block-rich-02 .block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .rich-02-content {
@@ -115,7 +148,9 @@
   max-width: 510px;
 }
 
-.rich-02__text-title, .rich-07__text-title, .rich-06__text-title, .rich-05__text-title, .rich-04__text-title, .rich-03__text-title {
+.rich-02__text-title, .rich-08__text-title, .rich-09__text-title, .rich-06__text-title, .rich-04__text-title, .rich-03__text-title, .rich-05__text-title-1, .rich-07__text-title-1,
+.rich-05__text-title-2,
+.rich-07__text-title-2 {
   text-align: right;
   font-family: Russo One;
   font-size: 24px;
@@ -125,7 +160,7 @@
   margin-bottom: 24px;
 }
 
-.rich-02__text, .rich-07__text, .rich-06__text, .rich-05__text, .rich-04__text, .rich-03__text {
+.rich-02__text, .rich-06__text, .rich-05__text, .rich-04__text, .rich-08__text, .rich-03__text {
   text-align: right;
   margin: 0;
 }
@@ -164,7 +199,9 @@
   margin-bottom: 115px;
 }
 
-.rich-03__text-title {
+.rich-03__text-title, .rich-05__text-title-1, .rich-07__text-title-1,
+.rich-05__text-title-2,
+.rich-07__text-title-2 {
   text-align: left;
 }
 
@@ -244,9 +281,20 @@
 
 .rich-04__text-title {
   text-align: center;
+  position: relative;
+}
+.rich-04__text-title::after {
+  content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
 }
 
-.rich-04__text {
+.rich-04__text, .rich-08__text {
   text-align: center;
 }
 
@@ -368,8 +416,35 @@
   padding: 70px 0;
 }
 
-.rich-05__text-title {
-  text-align: left;
+.rich-05__text-title-1, .rich-07__text-title-1,
+.rich-05__text-title-2,
+.rich-07__text-title-2 {
+  position: relative;
+}
+
+.rich-05__text-title-1::after, .rich-07__text-title-1::after {
+  content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -4px;
+  left: 0;
+  -webkit-transform: translateX(-100%) rotate(270deg);
+          transform: translateX(-100%) rotate(270deg);
+}
+
+.rich-05__text-title-2, .rich-07__text-title-2 {
+  display: inline-block;
+}
+.rich-05__text-title-2::after, .rich-07__text-title-2::after {
+  content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -4px;
+  right: 0px;
+  -webkit-transform: translateX(100%) rotate(90deg);
+          transform: translateX(100%) rotate(90deg);
 }
 
 .rich-05__text {
@@ -437,6 +512,9 @@
           flex-direction: column;
   gap: 100px;
   margin-bottom: 60px;
+  padding-left: 0;
+  width: calc(100% - 50px);
+  margin-left: 25px;
 }
 
 .rich-07__item {
@@ -520,20 +598,12 @@
   padding: 70px 0;
 }
 
-.rich-07__text-title {
-  text-align: left;
-}
-
-.rich-07__text {
-  text-align: left;
-}
-
 .rich-07-block-02 {
   position: relative;
   padding-bottom: 81px;
   background-image: #000;
   background-repeat: no-repeat;
-  background-size: 100%, 81px;
+  background-size: 100% 81px;
   background-position: bottom;
 }
 
@@ -556,4 +626,103 @@
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   background-color: #F00;
+}
+
+.block-rich-08 {
+  padding-top: 81px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(25%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rich-08-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.rich-08-img .img-rich {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rich-08__text-body {
+  max-width: 775px;
+  margin-bottom: 51px;
+}
+
+.rich-08__text-title, .rich-09__text-title {
+  text-align: center;
+}
+
+.block-rich-09 {
+  padding-top: 164px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(25%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.block-rich-09 .block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.rich-09__text-body {
+  position: relative;
+  max-width: 693;
+}
+.rich-09__text-body::after {
+  content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+
+.rich-09__text-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rich-09__params-list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.rich-09__params-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.rich-09__params-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.radial-gradient-border {
+  width: 100%;
+  height: 25px;
+  background-image: radial-gradient(50% 50% at 50% 50%, #D10202 0%, rgba(209, 2, 2, 0) 100%);
 }/*# sourceMappingURL=style.css.map */
