@@ -1,9 +1,9 @@
 {
-    "rich-list": [
+    "richList": [
         {
             "name": "2E GAMING OGAMA II UA",
             "link": "./2E_GAMING_OGAMA_II_UA/Index.html",
-            "photo": ""
+            "photo": "./img/2E_GAMING_OGAMA_II_UA/OGAMA_RGB_1.jpg"
         }
     ]
 }

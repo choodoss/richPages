@@ -14,6 +14,28 @@
   padding: 10px 20px;
 }
 
+.search-block {
+  color: #FFF;
+  font-family: Russo One;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.search-block__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .name {
   color: #FFF;
   font-family: Russo One;
@@ -31,11 +53,51 @@
   font-weight: 300;
   line-height: 1.5;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
 .rich-item {
-  background-color: rgb(7, 175, 226);
+  -ms-flex-preferred-size: calc((100% - 80px) / 3);
+      flex-basis: calc((100% - 80px) / 3);
   color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.rich-link {
+  font-style: normal;
+  color: #FFF;
+  background-color: orange;
+}
+.rich-link:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.rich-link__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rich-link__title {
+  padding: 20px;
+  text-align: center;
+  margin: 0;
 }
 
 .rich-01 {
