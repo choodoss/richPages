@@ -1,3 +1,5 @@
+@import '.././mixin';
+
 .rich-01 {
     color: #FFF;
     font-family: Montserrat;
@@ -9,6 +11,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
+
 }
 
 .img-rich {
@@ -18,8 +21,24 @@
 }
 
 .block-container {
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 139px;
+    padding-right: 139px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px)and (max-width: 1300px) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @include mobile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include tablet {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .title {
@@ -39,6 +58,21 @@
     width: 149px;
     height: 74px;
     fill: #FFF;
+
+    @include mobile {
+        top: 20px;
+        left: 20px;
+        max-width: 90px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    @include tablet {
+        top: 20px;
+        left: 20px;
+        max-width: 120px;
+        height: auto;
+    }
 }
 
 
@@ -51,17 +85,29 @@
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    @include mobile {
+        background-position: center;
+        padding-top: 500px;
+    }
 
     .h1-text {
+
         @extend .title;
         font-size: clamp(30px, 4vw, 60px);
         line-height: 1.34;
         text-align: right;
-        max-width: 875px;
+        max-width: 870px;
         margin-top: 0;
         margin-bottom: 0;
         margin-left: auto;
-        width: 70%;
+        padding-left: 0;
+
+        @include mobile {
+            text-align: center;
+            max-width: 100%;
+        }
     }
 
     .h1-text--title {
@@ -76,34 +122,72 @@
 .block-rich-02 {
     position: relative;
     padding-top: 35px;
-    padding-bottom: 246px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 82.81%, rgba(0, 0, 0, 0.98) 100%);
 
     .block-container {
         display: flex;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
     }
 }
 
-.rich-02-img {}
+.rich-02-img {
+    margin-top: -230px;
+    flex-basis: 514px;
+
+    @include mobile {
+        margin-top: 0;
+    }
+
+    @include tablet {
+        margin-top: -430px;
+        flex-basis: 514px;
+    }
+}
 
 .rich-02-content {
+    flex-basis: calc(100% - 514px);
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: end;
+
 }
 
 .rich-02-sub-title {
     text-align: right;
     font-size: 22px;
     font-weight: 700;
-    width: 60%;
     margin: 0;
     margin-bottom: 174px;
+
+    @include mobile {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    @include tablet {
+        margin-bottom: 50px;
+    }
 }
 
 .rich-02__text-body {
     max-width: 510px;
+
+    @include tablet {
+        max-width: 310px;
+    }
 }
 
 .rich-02__text-title {
@@ -114,6 +198,10 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 24px;
+
+    @include mobile {
+        margin-bottom: 10px;
+    }
 }
 
 .rich-02__text {
@@ -128,22 +216,43 @@
     background-size: 100% 800px;
     background-repeat: no-repeat;
     background-position: top;
+
+    @include mobile {
+        padding-top: 40px;
+    }
+
+    @include tablet {
+        padding-top: 40px;
+    }
 }
 
 .rich-03-row-content {
     display: flex;
     gap: 30px;
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .rich-03-content__column-1 {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+        align-items: center
+    }
+
 }
 
 .rich-03__text-body {
     @extend .rich-02__text-body;
     margin-bottom: 115px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .rich-03__text-title {
@@ -171,6 +280,8 @@
     &:last-of-type {
         margin-bottom: 0;
     }
+
+
 }
 
 .rich-03-content__column-2 {
@@ -179,12 +290,34 @@
     flex: 0 1 50%;
     align-items: end;
     justify-content: flex-start;
+
+    @include mobile {
+        align-items: center;
+    }
+
+    @include tablet {
+        align-items: normal;
+        justify-content: space-between;
+    }
 }
 
 .rich-03-img {
     margin-top: -288px;
     margin-right: -85px;
     margin-bottom: 108px;
+
+    @media screen and (max-width: 1300px) {
+        margin-top: -200px;
+    }
+
+    @include mobile {
+        margin: 20px 0;
+    }
+
+    @include tablet {
+        margin-top: -200px;
+        margin-right: -65px;
+    }
 }
 
 .rich-03__text-body-2 {
@@ -197,6 +330,7 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, (255, 0, 0, 0.1) 25%, (255, 0, 0, 1) 50%, (255, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 75% rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-position: bottom;
+
 }
 
 .rich-04-img {
@@ -225,6 +359,7 @@
         left: 50%;
         transform: translate(-50%, -100%);
     }
+
 }
 
 .rich-04__text {
@@ -250,6 +385,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    @include mobile {
+        padding-top: 40px;
+        position: relative;
+    }
 }
 
 .gradient-border {
@@ -267,6 +407,11 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+    padding-left: 0;
+    width: calc(100% - (2 * 25px));
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
 }
 
 .rich-05__item {
@@ -281,8 +426,28 @@
     padding-right: 50px;
     align-items: center;
 
+    @include mobile {
+        flex-direction: column;
+        gap: 40px;
+        padding-right: 0;
+    }
+
+    @include tablet {
+        gap: 20px;
+        padding-right: 0;
+    }
+
     .rich-05-img-block {
         border-radius: 20px 0 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .img-rich {
+            max-width: none;
+            object-fit: cover;
+        }
+
     }
 
     &:nth-child(even) {
@@ -290,9 +455,16 @@
         padding-left: 50px;
         padding-right: 0;
 
-        .rich-05-img-block {
-            border-radius: 0 20px 0 20px;
+        @include mobile {
+            flex-direction: column;
+            padding-left: 0;
         }
+
+        @include tablet {
+            gap: 20px;
+            padding-left: 0;
+        }
+
     }
 
     &::before,
@@ -316,6 +488,7 @@
         border-radius: 0 20px 20px 0;
         transform: translate(100%, -50%);
     }
+
 }
 
 .rich-05-img-block {
@@ -331,6 +504,14 @@
 .rich-05__text-body {
     @extend .rich-02__text-body;
     padding: 70px 0;
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    @include tablet {
+        padding: 20px;
+    }
 }
 
 .rich-05__text-title-1,
@@ -348,12 +529,20 @@
         top: -4px;
         left: 0;
         transform: translateX(-100%) rotate(270deg);
+
+        @include mobile {
+            left: 50%;
+            top: -4px;
+            transform: translate(-50%, -100%) rotate(0deg);
+        }
+    }
+
+    @include mobile {
+        text-align: center;
     }
 }
 
 .rich-05__text-title-2 {
-    display: inline-block;
-
     &::after {
         content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
         position: absolute;
@@ -362,18 +551,46 @@
         top: -4px;
         right: 0px;
         transform: translateX(100%) rotate(90deg);
+
+        @include mobile {
+            left: 50%;
+            top: -4px;
+            transform: translate(-50%, -100%) rotate(0deg);
+        }
+    }
+
+    @include mobile {
+        text-align: center;
     }
 }
 
 .rich-05__text {
     @extend .rich-02__text;
     text-align: left;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .rich-06__content {
-    padding-right: 9%;
+    padding-right: 139px;
     display: flex;
     align-items: center;
+
+    @include mobile {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 954px) {
+        position: relative;
+        display: block;
+    }
+
+    @media screen and (max-width: 1300px) {
+        padding-right: 80px;
+    }
 }
 
 .rich-06-img {
@@ -395,15 +612,32 @@
         left: 0;
         top: 0;
         height: 100%;
-        width: 100%;
+        width: 50%;
         transform: translateX(-100%);
         background-color: #F00;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        padding: 10px 19px 10px 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 954px) {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
     }
 }
 
 .rich-06__text-title {
     @extend .rich-02__text-title;
     text-align: left;
+
 }
 
 .rich-06__text {
@@ -418,69 +652,24 @@
 }
 
 .rich-07__list {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    @extend .rich-05__list;
     margin-bottom: 60px;
-    padding-left: 0;
-    width: calc(100% - (2 * 25px));
-    margin-left: 25px;
+
 }
 
+
 .rich-07__item {
-    position: relative;
-    border-radius: 20px;
-    border: 1px solid #F00;
-    display: flex;
-    justify-content: space-between;
-    gap: 65px;
-    box-sizing: border-box;
-    background-color: #000;
-    padding-right: 50px;
-
-    align-items: center;
-
-    .rich-07-img-block {
-        border-radius: 20px 0 20px 0;
-    }
-
-    &:nth-child(even) {
-        flex-direction: row-reverse;
-        padding-left: 50px;
-        padding-right: 0;
-
-        .rich-07-img-block {
-            border-radius: 0 20px 0 20px;
-        }
-    }
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 25px;
-        height: 48%;
-        background-color: #F00;
-    }
-
-    &::before {
-        left: 0;
-        border-radius: 20px 0 0 20px;
-        transform: translate(-100%, -50%);
-    }
-
-    &::after {
-        right: 0;
-        border-radius: 0 20px 20px 0;
-        transform: translate(100%, -50%);
-    }
+    @extend .rich-05__item;
 }
 
 .rich-07-img-block {
     display: flex;
     position: relative;
     overflow: hidden;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
 
     .img-rich {
         object-fit: cover;
@@ -496,13 +685,32 @@
             width: 50px;
             height: 100%;
             background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+
+            @include mobile {
+                display: none;
+            }
         }
+
+
+    }
+
+    @include mobile {
+        display: block;
+        overflow: auto;
+
     }
 }
 
 .rich-07__text-body {
-    @extend .rich-02__text-body;
-    padding: 70px 0;
+    @extend .rich-05__text-body;
+}
+
+.rich-07__text-title {
+    @extend .rich-03__text-title;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .rich-07__text-title-1 {
@@ -520,6 +728,10 @@
     background-repeat: no-repeat;
     background-size: 100% 81px;
     background-position: bottom;
+
+    @include mobile {
+        padding-bottom: 20px;
+    }
 }
 
 .rich-07__text-body-2 {
@@ -528,19 +740,44 @@
     position: absolute;
     top: 44%;
     right: 0;
-    padding: 40px 48px;
+    padding: 40px 162px 40px 48px;
     background-color: #F00;
     border-radius: 20px 0 0 20px;
+    margin-right: -139px;
 
-    &::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 8lvw;
-        transform: translateX(100%);
-        background-color: #F00;
+    @media screen and (max-width: 1430px) {
+        top: 40%;
+        padding-right: 103px;
+    }
+
+    @media screen and (max-width: 1300px) {
+        top: 35%;
+        padding-right: 103px;
+        margin-right: -80px;
+        max-width: 400px;
+    }
+
+    @include mobile {
+        position: relative;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 20px;
+        max-width: auto;
+    }
+
+    @include tablet {
+        top: 35%;
+        padding-right: 60px;
+        margin-right: -40px;
+        max-width: 400px;
+    }
+}
+
+.rich-07__text {
+    @extend .rich-05__text;
+
+    @include mobile {
+        text-align: center;
     }
 }
 
@@ -553,6 +790,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobile {
+        padding-top: 20px;
+    }
 }
 
 .rich-08-img {
@@ -566,10 +807,14 @@
 .rich-08__text-body {
     max-width: 775px;
     margin-bottom: 51px;
+
+    @include mobile {
+        margin: 0 20px 20px;
+    }
 }
 
 .rich-08__text-title {
-    @extend .rich-02__text-title;
+    @extend .rich-03__text-title;
     text-align: center;
 }
 
@@ -589,6 +834,15 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 42px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    @include mobile {
+        padding-top: 20px;
     }
 }
 
@@ -606,7 +860,12 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -100%);
+
+        @include mobile {
+            display: none;
+        }
     }
+
 }
 
 .rich-09__text-title {
