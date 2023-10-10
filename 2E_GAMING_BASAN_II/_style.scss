@@ -7,7 +7,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    background-image: url(../img/2E_GAMING_OGAMA_II_UA/main-bg-1.jpg);
+    background-image: url(../img/2E_GAMING_BASAN_II/rich-02-main-bg-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
@@ -339,7 +339,7 @@
     position: relative;
 
     &::after {
-        content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -420,20 +420,22 @@
     }
 
     .rich-02-5-img-block {
-        border-radius: 20px 0 20px 0;
+        border-radius: 20px 0 0 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
-        @include tablet {
-            .img-rich-02-1 {
-                max-width: none;
-                object-fit: cover;
-            }
+        @include mobile {
+            border-radius: 20px 20px 0 0;
         }
 
-
+        .img-rich-02-1 {
+            max-width: none;
+            object-fit: cover;
+        }
     }
+
 
     &:nth-child(even) {
         flex-direction: row-reverse;
@@ -450,41 +452,39 @@
             padding-left: 0;
         }
 
-    }
+        .rich-02-5-img-block {
+            border-radius: 0 20px 20px 0;
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 25px;
-        height: 48%;
-        background-color: #F00;
-    }
+            @include mobile {
+                border-radius: 20px 20px 0 0;
+            }
+        }
 
-    &::before {
-        left: 0;
-        border-radius: 20px 0 0 20px;
-        transform: translate(-100%, -50%);
-    }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 48%;
+            background-color: #F00;
+        }
 
-    &::after {
-        right: 0;
-        border-radius: 0 20px 20px 0;
-        transform: translate(100%, -50%);
-    }
+        &::before {
+            left: 0;
+            border-radius: 20px 0 0 20px;
+            transform: translate(-100%, -50%);
+        }
 
-}
+        &::after {
+            right: 0;
+            border-radius: 0 20px 20px 0;
+            transform: translate(100%, -50%);
+        }
 
-.rich-02-5-img-block {
-    display: flex;
-    overflow: hidden;
-
-
-    .img-rich-02-1 {
-        object-fit: cover;
     }
 }
+
 
 .rich-02-5__text-body {
     @extend .rich-02-2__text-body;
@@ -510,7 +510,7 @@
 
 .rich-02-5__text-title-1 {
     &::after {
-        content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -533,7 +533,7 @@
 
 .rich-02-5__text-title-2 {
     &::after {
-        content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -628,7 +628,7 @@
 }
 
 .rich-02-6__text {
-    @extend .rich-03__text;
+    @extend .rich-02-3__text;
 }
 
 .block-rich-02-7 {
@@ -841,7 +841,7 @@
     max-width: 693;
 
     &::after {
-        content: url(../img/2E_GAMING_OGAMA_II_UA/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
         position: absolute;
         top: 0;
         left: 50%;
