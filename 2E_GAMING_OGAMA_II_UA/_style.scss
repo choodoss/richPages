@@ -420,19 +420,19 @@
     }
 
     .rich-01-5-img-block {
-        border-radius: 20px 0 20px 0;
+        border-radius: 20px 0 0 20px;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        @include tablet {
-            .img-rich-01-1 {
-                max-width: none;
-                object-fit: cover;
-            }
+        .img-rich-01-1 {
+            max-width: none;
+            object-fit: cover;
         }
 
-
+        @include mobile {
+            border-radius: 20px 20px 0 0;
+        }
     }
 
     &:nth-child(even) {
@@ -450,6 +450,13 @@
             padding-left: 0;
         }
 
+        .rich-01-5-img-block {
+            border-radius: 0 20px 20px 0;
+
+            @include mobile {
+                border-radius: 20px 20px 0 0;
+            }
+        }
     }
 
     &::before,
@@ -472,17 +479,6 @@
         right: 0;
         border-radius: 0 20px 20px 0;
         transform: translate(100%, -50%);
-    }
-
-}
-
-.rich-01-5-img-block {
-    display: flex;
-    overflow: hidden;
-
-
-    .img-rich-01-1 {
-        object-fit: cover;
     }
 }
 
