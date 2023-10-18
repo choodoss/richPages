@@ -116,12 +116,14 @@
         display: flex;
 
         @include mobile {
+            display: flex;
             flex-direction: column-reverse;
             align-items: center;
             gap: 20px;
         }
 
         @include tablet {
+            display: flex;
             flex-direction: column-reverse;
             gap: 30px;
         }
@@ -129,7 +131,7 @@
 }
 
 .rich-02-2-img {
-    margin-top: -160px;
+    margin-top: -230px;
     flex-basis: 514px;
 
     @include mobile {
@@ -138,7 +140,7 @@
 
     @include tablet {
         margin-top: -430px;
-        width: 400px;
+        flex-basis: 514px;
     }
 }
 
@@ -157,12 +159,10 @@
     font-weight: 700;
     margin: 0;
     margin-bottom: 174px;
-    width: 70%;
 
     @include mobile {
         text-align: center;
         margin-bottom: 50px;
-        width: 100%;
     }
 
     @include tablet {
@@ -426,18 +426,13 @@
         justify-content: center;
         overflow: hidden;
 
+        @include mobile {
+            border-radius: 20px 20px 0 0;
+        }
+
         .img-rich-02-1 {
             max-width: none;
             object-fit: cover;
-        }
-
-        @include mobile {
-            border-radius: 20px 20px 0 0;
-
-            .img-rich-02-1 {
-                max-width: 100%;
-                object-fit: cover;
-            }
         }
     }
 
@@ -464,28 +459,29 @@
                 border-radius: 20px 20px 0 0;
             }
         }
-    }
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 25px;
-        height: 48%;
-        background-color: #F00;
-    }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 48%;
+            background-color: #F00;
+        }
 
-    &::before {
-        left: 0;
-        border-radius: 20px 0 0 20px;
-        transform: translate(-100%, -50%);
-    }
+        &::before {
+            left: 0;
+            border-radius: 20px 0 0 20px;
+            transform: translate(-100%, -50%);
+        }
 
-    &::after {
-        right: 0;
-        border-radius: 0 20px 20px 0;
-        transform: translate(100%, -50%);
+        &::after {
+            right: 0;
+            border-radius: 0 20px 20px 0;
+            transform: translate(100%, -50%);
+        }
+
     }
 }
 
@@ -772,7 +768,7 @@
 }
 
 .block-rich-02-8 {
-    padding-top: 115px;
+    padding-top: 81px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
     background-size: 100% 300px;
     background-repeat: no-repeat;
@@ -783,10 +779,6 @@
 
     @include mobile {
         padding-top: 20px;
-    }
-
-    @include tablet {
-        padding-top: 81px;
     }
 }
 
@@ -808,19 +800,8 @@
 }
 
 .rich-02-8__text-title {
-    margin: 0;
+    @extend .rich-02-3__text-title;
     text-align: center;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.rich-02-8__text-title--bold {
-    font-weight: 500;
 }
 
 .rich-02-8__text {
