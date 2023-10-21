@@ -41,7 +41,7 @@
     }
 }
 
-.logo {
+.rich-03-logo {
     position: absolute;
     top: 58px;
     left: 115px;
@@ -258,14 +258,16 @@
 
 .rich-03-3-img-block {
     flex: 0 1 auto;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
     border-radius: 20px;
-    border: 1px solid #F00;
+    padding: 1px;
     overflow: hidden;
     margin-bottom: 32px;
     max-width: 609px;
 
     .img-rich-03-1 {
         object-fit: cover;
+        border-radius: 20px;
     }
 
     &:last-of-type {
@@ -648,37 +650,40 @@
 
 .rich-03-6__text-body {
     @extend .rich-03-2__text-body;
-    max-width: 500px;
-    padding: 40px 178px 40px 40px;
+    position: relative;
+    padding: 40px 48px 40px 96px;
     background-color: #F00;
-    border-radius: 20px;
-    margin-right: -159px;
-    margin-left: -50px;
+    border-radius: 0 20px 20px 0;
 
-    @include tablet {
+    &::before {
+        content: '';
         position: absolute;
-        bottom: 0;
         left: 0;
-        z-index: 2;
-        margin: 0 40px;
-        padding: 40px;
-        max-width: 100%;
+        top: 0;
+        height: 100%;
+        width: 40%;
+        transform: translateX(-100%);
+        background-color: #F00;
 
-        @media screen and (min-width:961px) {
-            position: relative;
-            z-index: 1;
-            padding: 40px 100px 40px 40px;
-            margin-right: -60px;
-            margin-left: -30px;
+        @media screen and (max-width: 980px) {
+            display: none;
         }
     }
 
     @include mobile {
-        position: relative;
-        margin-left: -20px;
-        margin-right: -40px;
+        padding: 10px 19px 10px 20px;
+    }
+
+    @media screen and (min-width: 980px) and (max-width: 1300px) {
         padding: 40px;
-        max-width: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 980px) {
+        z-index: 2;
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 20px;
     }
 }
 

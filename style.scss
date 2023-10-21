@@ -54,6 +54,7 @@
     list-style: none;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
     padding: 0;
@@ -66,13 +67,16 @@
     flex-direction: column;
     overflow: hidden;
     border-radius: 1rem;
-
 }
 
 .rich-link {
+    flex: 1 1 auto;
     font-style: normal;
     color: #FFF;
     background-color: orange;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
         filter: brightness(1.2);
@@ -80,17 +84,24 @@
 }
 
 .rich-link__img {
+    flex: 1 1 auto;
     max-width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .rich-link__title {
+    flex: 0 1 auto;
     padding: 20px;
-    text-align: center;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @import './2E_GAMING_OGAMA_II_UA/style';
 @import './2E_GAMING_BASAN_II/style';
 @import './2E_GAMING_HIBAGON_II/style';
+@import './2E_GAMING_BUSHIDO_II/style';

@@ -14,6 +14,16 @@
             "name": "2E GAMING HIBAGON II",
             "link": "./2E_GAMING_HIBAGON_II/Index.html",
             "photo": "./img/2E_GAMING_HIBAGON_II/OGAMA_RGB_1.jpg"
+        },
+        {
+            "name": "2E GAMING BUSHIDO II",
+            "link": "./2E_GAMING_BUSHIDO_II/Index.html",
+            "photo": "./img/2E_GAMING_BUSHIDO_II/Bushido_1.jpg"
+        },
+        {
+            "name": "Varmilo Minilo Eucalyptus",
+            "link": "./2E_GAMING_BUSHIDO_II/Index.html",
+            "photo": "./img/Varmilo_Minilo_Eucalyptus/rich_05--main.jpg"
         }
     ]
 }

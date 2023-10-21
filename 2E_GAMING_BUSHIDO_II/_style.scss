@@ -1,26 +1,26 @@
 @import '.././mixin';
 
-.rich-02-1 {
+.rich-04-1 {
     color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    background-image: url(../img/2E_GAMING_BASAN_II/rich-02-main-bg-1.jpg);
+    background-image: url(../img/2E_GAMING_BUSHIDO_II/rich-04-main-bg-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
 
 }
 
-.img-rich-02-1 {
+.img-rich-04-1 {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.rich-02-1__block-container {
+.rich-04-1__block-container {
     padding-left: 139px;
     padding-right: 139px;
     margin: 0 auto;
@@ -41,7 +41,7 @@
     }
 }
 
-.rich-02-logo {
+.rich-04-logo {
     position: absolute;
     top: 58px;
     left: 115px;
@@ -66,12 +66,12 @@
 }
 
 
-.block-rich-02-1 {
+.block-rich-04-1 {
     position: relative;
     padding-top: 639px;
     margin: 0 auto;
     background-position: 50%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 82.81%, rgba(0, 0, 0, 0.98) 100%), url(../img/2E_GAMING_OGAMA_II_UA/OGAMA_RGB_1.jpg), lightgray 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 82.81%, rgba(0, 0, 0, 0.98) 100%), url(../img/2E_GAMING_BUSHIDO_II/Bushido_1.jpg), lightgray 50%;
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,13 +83,13 @@
     }
 }
 
-.rich-02-1__h1-text {
+.rich-04-1__h1-text {
     color: #FFF;
     font-family: Russo One;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: clamp(30px, 4vw, 60px);
+    font-size: clamp(15px, 4vw, 30px);
     line-height: 1.34;
     text-align: right;
     margin-top: 0;
@@ -99,20 +99,20 @@
         text-align: center;
         max-width: 100%;
     }
-
-    .rich-02-1__h1-text--title {
-        color: rgba(255, 0, 0, 0.80);
-        font-size: clamp(40px, 5vw, 80px);
-        line-height: 1;
-    }
 }
 
-.block-rich-02-2 {
+.rich-04-1__h1-text--title {
+    color: rgba(255, 0, 0, 0.80);
+    font-size: clamp(40px, 5vw, 80px);
+    line-height: 1;
+}
+
+.block-rich-04-2 {
     position: relative;
     padding-top: 35px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 82.81%, rgba(0, 0, 0, 0.98) 100%);
 
-    .rich-02-1__block-container {
+    .rich-04-1__block-container {
         display: flex;
 
         @include mobile {
@@ -130,7 +130,7 @@
     }
 }
 
-.rich-02-2-img {
+.rich-04-2-img {
     margin-top: -230px;
     flex-basis: 514px;
 
@@ -144,7 +144,7 @@
     }
 }
 
-.rich-02-2-content {
+.rich-04-2-content {
     flex-basis: calc(100% - 514px);
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@
 
 }
 
-.rich-02-2-sub-title {
+.rich-04-2-sub-title {
     text-align: right;
     font-size: 22px;
     font-weight: 700;
@@ -172,7 +172,7 @@
     }
 }
 
-.rich-02-2__text-body {
+.rich-04-2__text-body {
     max-width: 510px;
 
     @include tablet {
@@ -180,7 +180,7 @@
     }
 }
 
-.rich-02-2__text-title {
+.rich-04-2__text-title {
     text-align: right;
     font-family: Russo One;
     font-size: 24px;
@@ -194,12 +194,12 @@
     }
 }
 
-.rich-02-2__text {
+.rich-04-2__text {
     text-align: right;
     margin: 0;
 }
 
-.block-rich-02-3 {
+.block-rich-04-3 {
     padding-top: 124px;
     padding-bottom: 115px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 10%, #000000 10%, #000000 90%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.1) 100%);
@@ -217,7 +217,7 @@
     }
 }
 
-.rich-02-3-row-content {
+.rich-04-3-row-content {
     display: flex;
     gap: 30px;
 
@@ -226,7 +226,7 @@
     }
 }
 
-.rich-02-3-content__column-1 {
+.rich-04-3-content__column-1 {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
@@ -237,8 +237,8 @@
 
 }
 
-.rich-02-3__text-body {
-    @extend .rich-02-2__text-body;
+.rich-04-3__text-body {
+    @extend .rich-04-2__text-body;
     margin-bottom: 115px;
 
     @include mobile {
@@ -246,17 +246,18 @@
     }
 }
 
-.rich-02-3__text-title {
-    @extend .rich-02-2__text-title;
+.rich-04-3__text-title {
+    @extend .rich-04-2__text-title;
     text-align: left;
 }
 
-.rich-02-3__text {
-    @extend .rich-02-2__text;
+.rich-04-3__text {
+    @extend .rich-04-2__text;
     text-align: left;
 }
 
-.rich-02-3-img-block {
+.rich-04-3-img-block {
+    box-sizing: border-box;
     flex: 0 1 auto;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
     border-radius: 20px;
@@ -265,7 +266,7 @@
     margin-bottom: 32px;
     max-width: 609px;
 
-    .img-rich-03-1 {
+    .img-rich-04-1 {
         object-fit: cover;
         border-radius: 20px;
     }
@@ -275,7 +276,7 @@
     }
 }
 
-.rich-02-3-content__column-2 {
+.rich-04-3-content__column-2 {
     display: flex;
     flex-direction: column;
     flex: 0 1 50%;
@@ -291,14 +292,9 @@
     }
 }
 
-.rich-02-3-img {
-    margin-top: -288px;
-    margin-right: -85px;
-    margin-bottom: 108px;
-
-    @media screen and (max-width: 1300px) {
-        margin-top: -200px;
-    }
+.rich-04-3-img {
+    margin-top: -190px;
+    margin-bottom: 80px;
 
     @include mobile {
         margin: 20px 0;
@@ -306,42 +302,44 @@
 
     @include tablet {
         margin-top: -100px;
-        margin-right: -65px;
     }
 }
 
-.rich-02-3__text-body-2 {
-    @extend .rich-02-2__text-body;
+.rich-04-3__text-body-2 {
+    @extend .rich-04-2__text-body;
     margin: 0;
 }
 
-.block-rich-02-4 {
+.block-rich-04-4 {
     position: relative;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, (255, 0, 0, 0.1) 25%, (255, 0, 0, 1) 50%, (255, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 75% rgba(0, 0, 0, 1) 100%);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 0.1) 100%);
     background-repeat: no-repeat;
     background-position: bottom;
-
 }
 
-.rich-02-4-img {
+.rich-04-4-img {
     width: 100%;
-    display: flex;
-    justify-content: center;
     overflow: hidden;
 
-    .img-rich-02-1 {
+    .img-rich-04-1 {
         width: 100%;
-        height: 100%;
+        height: auto;
+        object-fit: cover;
+        max-width: none;
     }
 }
 
-.rich-02-4__text-title {
-    @extend .rich-02-2__text-title;
+
+
+.rich-04-4__text-title {
+    @extend .rich-04-2__text-title;
     text-align: center;
     position: relative;
 
     &::after {
-        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_HIBAGON_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -352,19 +350,19 @@
 
 }
 
-.rich-02-4__text {
-    @extend .rich-02-2__text;
+.rich-04-4__text {
+    @extend .rich-04-2__text;
     text-align: center;
 }
 
-.rich-02-4__text-body {
+.rich-04-4__text-body {
     position: absolute;
     padding-bottom: 39px;
     left: 0;
     bottom: 2px;
     background-image: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.01) 100%);
 
-    .rich-02-1__block-container {
+    .rich-03-1__block-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -376,33 +374,176 @@
     }
 }
 
-.rich-02-1__gradient-border {
+
+.rich-04-1__gradient-border {
     height: 2px;
     background-image: linear-gradient(to right, transparent, #F00, transparent);
 }
 
-.block-rich-02-5 {
-    padding: 100px 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 10%);
-    background-repeat: no-repeat;
+.block-rich-04-5 {
+    padding: 150px 0;
 
     @include mobile {
         padding: 50px 0;
     }
 }
 
-.rich-02-5__list {
+.rich-04-5__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 100px;
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+
+    @include mobile {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-image: radial-gradient(circle at center, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &::before {
+        height: 100%;
+        width: 1px;
+    }
+
+    &::after {
+        content: "";
+        height: 1px;
+        top: 51%;
+        width: 100%;
+    }
+}
+
+.rich-04-5__item {
+    flex-basis: calc((100% - 101px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    @include mobile {
+        gap: 20px;
+    }
+}
+
+.rich-04-5__text {
+    width: 80%;
+    text-align: center;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.rich-04-5__text--bold {
+    font-weight: 700;
+}
+
+.block-rich-04-6 {
+    padding-top: 40px;
+}
+
+.rich-04-6__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+
+    @include tablet {
+        gap: 50px;
+    }
+
+    @include mobile {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+.rich-04-6__item {
+    flex-basis: calc((100% - 150px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        flex-basis: calc((100% - 50px) / 2);
+    }
+
+    @include mobile {
+        flex-basis: 100%;
+    }
+}
+
+.rich-04-6__text-body {
+    @extend .rich-04-3__text-body;
+    margin-bottom: 60px;
+}
+
+.rich-04-6__text-title {
+    @extend .rich-04-3__text-title;
+    text-align: center;
+}
+
+.rich-04-6__text {
+    @extend .rich-04-3__text;
+    text-align: center;
+}
+
+.rich-04-6-img {
+    border-radius: 20px;
+    border: 1px solid #F00;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .img-rich-04-1 {
+        object-fit: cover;
+        max-width: none;
+    }
+}
+
+
+.block-rich-04-7 {
+    padding-top: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 10%);
+    background-repeat: no-repeat;
+
+    @include tablet {
+        padding-top: 80px;
+    }
+
+    @include mobile {
+        padding-top: 40px;
+    }
+}
+
+.rich-04-7__list {
     display: flex;
     flex-direction: column;
     gap: 100px;
     padding-left: 0;
     width: calc(100% - (2 * 25px));
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     margin-left: 25px;
 }
 
-.rich-02-5__item {
+.rich-04-7__item {
     position: relative;
     border-radius: 20px;
     border: 1px solid #F00;
@@ -425,7 +566,7 @@
         padding-right: 0;
     }
 
-    .rich-02-5-img-block {
+    .rich-04-7-img-block {
         position: relative;
         border-radius: 20px 0 0 20px;
         display: flex;
@@ -437,7 +578,7 @@
             border-radius: 20px 20px 0 0;
         }
 
-        .img-rich-02-1 {
+        .img-rich-04-1 {
             max-width: none;
             object-fit: cover;
 
@@ -462,7 +603,7 @@
             padding-left: 0;
         }
 
-        .rich-02-5-img-block {
+        .rich-04-7-img-block {
             border-radius: 0 20px 20px 0;
             display: flex;
             align-items: center;
@@ -547,8 +688,8 @@
     }
 }
 
-.rich-02-5__text-body {
-    @extend .rich-02-2__text-body;
+.rich-04-7__text-body {
+    @extend .rich-04-2__text-body;
     padding: 70px 0;
 
     @include mobile {
@@ -562,16 +703,17 @@
     }
 }
 
-.rich-02-5__text-title-1,
-.rich-02-5__text-title-2 {
-    @extend .rich-02-3__text-title;
+.rich-04-7__text-title,
+.rich-04-7__text-title-1,
+.rich-04-7__text-title-2 {
+    @extend .rich-04-3__text-title;
     position: relative;
     display: inline-block;
 }
 
-.rich-02-5__text-title-1 {
+.rich-04-7__text-title-1 {
     &::after {
-        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BUSHIDO_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -592,9 +734,9 @@
     }
 }
 
-.rich-02-5__text-title-2 {
+.rich-04-7__text-title-2 {
     &::after {
-        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BUSHIDO_II/arrow-bold-red.svg);
         position: absolute;
         width: 34px;
         height: 34px;
@@ -614,8 +756,13 @@
     }
 }
 
-.rich-02-5__text {
-    @extend .rich-02-2__text;
+.rich-04-7-block-02 {
+    padding-top: 35px;
+    position: relative;
+}
+
+.rich-04-7__text {
+    @extend .rich-04-2__text;
     text-align: left;
 
     @include mobile {
@@ -623,161 +770,8 @@
     }
 }
 
-.rich-02-6__content {
-    position: relative;
-    padding-right: 139px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-
-    @include tablet {
-        padding-right: 40px;
-    }
-
-    @include mobile {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    padding-right: 20px;
-}
-
-.rich-02-6-img {
-    position: relative;
-    z-index: 2;
-    flex: 1 0 50%;
-}
-
-.rich-02-6__text-body {
-    @extend .rich-02-2__text-body;
-    max-width: 500px;
-    padding: 40px 178px 40px 40px;
-    background-color: #F00;
-    border-radius: 20px;
-    margin-right: -159px;
-    margin-left: -50px;
-
-    @include tablet {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        margin: 0 40px;
-        padding: 40px;
-        max-width: 100%;
-
-        @media screen and (min-width:961px) {
-            position: relative;
-            z-index: 1;
-            padding: 40px 100px 40px 40px;
-            margin-right: -60px;
-            margin-left: -30px;
-        }
-    }
-
-    @include mobile {
-        position: relative;
-        margin-left: -20px;
-        margin-right: -40px;
-        padding: 40px;
-        max-width: none;
-    }
-}
-
-.rich-02-6__text-title {
-    @extend .rich-02-3__text-title;
-}
-
-.rich-02-6__text {
-    @extend .rich-02-3__text;
-}
-
-.block-rich-02-7 {
-    padding-top: 100px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 10%);
-    background-repeat: no-repeat;
-}
-
-.rich-02-7__list {
-    @extend .rich-02-5__list;
-    margin-bottom: 60px;
-}
-
-.rich-02-7__item {
-    @extend .rich-02-5__item;
-
-    .rich-02-7-img-block {
-        position: relative;
-        border-radius: 20px 0 0 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-
-        @include mobile {
-            border-radius: 20px 20px 0 0;
-        }
-
-        .img-rich-02-1 {
-            max-width: none;
-            object-fit: cover;
-
-            @include mobile {
-                max-width: 100%;
-            }
-        }
-    }
-
-    &:nth-child(even) {
-        .rich-02-7-img-block {
-            border-radius: 0 20px 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-
-            @include mobile {
-                border-radius: 20px 20px 0 0;
-            }
-        }
-    }
-}
-
-.rich-02-7__text-body {
-    @extend .rich-02-5__text-body;
-}
-
-.rich-02-7__text-title {
-    @extend .rich-02-3__text-title;
-
-    @include mobile {
-        text-align: center;
-    }
-}
-
-.rich-02-7__text-title-1 {
-    @extend .rich-02-5__text-title-1;
-}
-
-.rich-02-7__text-title-2 {
-    @extend .rich-02-5__text-title-2;
-}
-
-.rich-02-7-block-02 {
-    position: relative;
-    padding-bottom: 81px;
-    background-image: #000;
-    background-repeat: no-repeat;
-    background-size: 100% 81px;
-    background-position: bottom;
-
-    @include mobile {
-        padding-bottom: 20px;
-    }
-}
-
-.rich-02-7__text-body-2 {
-    @extend .rich-02-2__text-body;
+.rich-04-7__text-body-2 {
+    @extend .rich-04-2__text-body;
     max-width: 500px;
     position: absolute;
     top: 44%;
@@ -815,15 +809,8 @@
     }
 }
 
-.rich-02-7__text {
-    @extend .rich-02-5__text;
 
-    @include mobile {
-        text-align: center;
-    }
-}
-
-.block-rich-02-8 {
+.block-rich-04-8 {
     padding-top: 81px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
     background-size: 100% 300px;
@@ -838,15 +825,15 @@
     }
 }
 
-.rich-02-8-img {
+.rich-04-8-img {
     flex: 1 1 auto;
 
-    .img-rich-02-1 {
+    .img-rich-04-1 {
         object-fit: cover;
     }
 }
 
-.rich-02-8__text-body {
+.rich-04-8__text-body {
     max-width: 775px;
     margin-bottom: 51px;
 
@@ -855,33 +842,24 @@
     }
 }
 
-.rich-02-8__text-title {
-    color: #FFF;
+.rich-04-8__text-title {
+    @extend .rich-04-3__text-title;
     text-align: center;
-    font-size: 40px;
-    margin: 0;
-
-    @include mobile {
-        font-size: 30px;
-    }
+    margin: 0
 }
 
-.rich-02-8__text-title--bold {
-    font-weight: 500;
+.rich-04-8__text {
+    @extend .rich-04-2__text;
 }
 
-.rich-02-8__text {
-    @extend .rich-02-4__text;
-}
-
-.block-rich-02-9 {
+.block-rich-04-9 {
     padding-top: 100px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
     background-size: 100% 200px;
     background-repeat: no-repeat;
     background-position: top;
 
-    .rich-02-1__block-container {
+    .rich-04-1__block-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -900,14 +878,14 @@
 
 
 
-.rich-02-9-img {}
+.rich-04-9-img {}
 
-.rich-02-9__text-body {
+.rich-04-9__text-body {
     position: relative;
     max-width: 693;
 
     &::after {
-        content: url(../img/2E_GAMING_BASAN_II/arrow-bold-red.svg);
+        content: url(../img/2E_GAMING_BUSHIDO_II/arrow-bold-red.svg);
         position: absolute;
         top: 0;
         left: 50%;
@@ -920,20 +898,20 @@
 
 }
 
-.rich-02-9__text-title {
-    @extend.rich-02-8__text-title;
+.rich-04-9__text-title {
+    @extend.rich-04-8__text-title;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.rich-02-9__params-list {
+.rich-04-9__params-list {
     list-style: none;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.rich-02-9__params-item {
+.rich-04-9__params-item {
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
@@ -943,7 +921,7 @@
     }
 }
 
-.rich-02__radial-gradient-border {
+.rich-04__radial-gradient-border {
     width: 100%;
     height: 25px;
     background-image: radial-gradient(50% 50% at 50% 50%, #D10202 0%, rgba(209, 2, 2, 0.00) 100%);
