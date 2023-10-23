@@ -1,11 +1,100 @@
 @import '.././mixin';
 
-.rich-01-1 {}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
-.img-rich-04-1 {
+@font-face {
+    font-family: "DIN Pro Light";
+    src: url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.eot");
+    src: url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.woff") format("woff"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.svg#DIN Pro Light") format("svg");
+}
+
+.rich-05-1 {
+    color: #000;
+    font-family: DIN Pro Light;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    background-image: linear-gradient(to bottom, #bfd3c8 0% #bfd3c8 100%);
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.img-rich-05-1 {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.rich-01-1__block-container {}
+.block-rich-05-1 {
+    position: relative;
+}
+
+.rich-05-1__block-container {
+    margin: 0 60px;
+}
+
+.rich-05-1__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.rich-05-1__main-title {
+    position: absolute;
+    top: 21.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+
+    color: #636892;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: clamp(20px, 5vw, 70px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.42;
+}
+
+.block-rich-05-2 {}
+
+.block-rich-05-2__list {}
+
+.block-rich-05-2__item {}
+
+.block-rich-05-2__body {
+    border-radius: 40px;
+    background: #F9F6ED;
+
+    padding-top: 136px;
+    padding-left: 102px;
+    padding-right: 102px;
+    padding-bottom: 104px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
+
+.rich-05-2__text-body {
+    text-align: center;
+    width: 85%;
+}
+
+.rich-05-2__title {
+    color: #636892;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.rich-05-2__text {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.rich-05-2__img-block {}
