@@ -15,10 +15,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-
-    background-image: linear-gradient(to bottom, #bfd3c8 0% #bfd3c8 100%);
-    background-attachment: fixed;
-    background-repeat: repeat;
+    background-color: #bfd3c8;
 }
 
 .img-rich-05-1 {
@@ -59,9 +56,15 @@
     line-height: 1.42;
 }
 
-.block-rich-05-2 {}
+.block-rich-05-2 {
+    margin-bottom: 60px;
+}
 
-.block-rich-05-2__list {}
+.block-rich-05-2__list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
 
 .block-rich-05-2__item {}
 
@@ -79,6 +82,7 @@
     justify-content: center;
     align-items: center;
     gap: 110px;
+    overflow: hidden;
 }
 
 .rich-05-2__text-body {
@@ -90,11 +94,268 @@
     color: #636892;
     font-size: 36px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .rich-05-2__text {
-    font-size: 22px;
     font-weight: 300;
 }
 
-.rich-05-2__img-block {}
+.block-rich-05-3__item {
+    position: relative;
+}
+
+.block-rich-05-3__body {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.rich-05-3__text-body {
+    @extend .rich-05-2__text-body;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+
+.rich-05-3__title {
+    @extend .rich-05-2__title;
+}
+
+.rich-05-3__text {
+    @extend .rich-05-3__text;
+}
+
+.rich-05-3__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+.block-rich-05-4__item {
+    @extend .block-rich-05-3__item;
+}
+
+.block-rich-05-4__body {
+    @extend .block-rich-05-3__body;
+}
+
+.rich-05-4__text-body {
+    @extend .rich-05-3__text-body;
+    width: 50%;
+}
+
+.rich-05-4__title {
+    @extend .rich-05-3__title;
+}
+
+.rich-05-4__text {
+    @extend .rich-05-3__text;
+}
+
+.rich-05-4__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+.block-rich-05-5__body {
+    display: flex;
+    gap: 30px;
+}
+
+.rich-05-5__img-block {
+    border-radius: 40px;
+    overflow: hidden;
+
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-6__body {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.rich-05-6__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-7 {
+    background-image: linear-gradient(to bottom, #F9F6ED 0%, #F9F6ED 50%, transparent 50%, transparent 100%);
+    padding: 60px 0;
+
+}
+
+.block-rich-05-7__body {
+    @extend .block-rich-05-3__body;
+    position: relative;
+}
+
+.rich-05-7__text-body {
+    @extend .rich-05-3__text-body;
+    top: 120px;
+}
+
+.rich-05-7__title {
+    @extend .rich-05-3__title;
+}
+
+.rich-05-7__text {
+    @extend .rich-05-3__text;
+}
+
+.rich-05-7__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-8 {
+    @extend .block-rich-05-7;
+}
+
+.block-rich-05-8__body {
+    @extend .block-rich-05-7__body;
+}
+
+.rich-05-8__text-body {
+    @extend .rich-05-7__text-body;
+}
+
+.rich-05-8__title {
+    @extend .rich-05-7__title;
+}
+
+.rich-05-8__text {
+    @extend .rich-05-7__text;
+}
+
+.rich-05-8__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-9 {
+    @extend .block-rich-05-8;
+    background-image: url(../img/Varmilo_Minilo_Eucalyptus/rich_05-9-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.block-rich-05-9__body {
+    @extend .block-rich-05-9__body;
+}
+
+.rich-05-9__img-block {
+    border-radius: 40px;
+    overflow: hidden;
+
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-10 {
+    background-color: #F9F6ED;
+    padding: 100px 0;
+}
+
+.block-rich-05-10__list {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.block-rich-05-10__item {}
+
+.block-rich-05-10__item-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.block-rich-05-10__body {
+    position: relative;
+}
+
+.rich-05-10__text-body {
+    @extend .rich-05-8__text-body;
+    top: 310px;
+    width: 60%;
+}
+
+.rich-05-10__title {
+    @extend .rich-05-2__title;
+}
+
+.rich-05-10__text {
+    @extend .rich-05-2__text;
+}
+
+.rich-05-10__img-block {}
+
+.block-rich-05-10__item--row {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.rich-05-10__text--bold {
+    font-weight: 700;
+}
+
+.block-rich-05-10__table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rich-05-10-table__row {
+    display: table-row;
+}
+
+.rich-05-10-table__cell {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+    @media only screen and (max-width: 600px) {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.rich-05-10-table__row--header,
+.rich-05-10-table__cell--header {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Add responsive styles for small screens */
