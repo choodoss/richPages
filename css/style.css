@@ -4546,6 +4546,11 @@
 .rich-05-1__block-container {
   margin: 0 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-1__block-container {
+    margin: 0 40px;
+  }
+}
 
 .rich-05-1__img-block .img-rich-05-1 {
   max-width: none;
@@ -4564,7 +4569,7 @@
   color: #636892;
   text-align: center;
   font-family: Ubuntu;
-  font-size: clamp(20px, 5vw, 70px);
+  font-size: clamp(20px, 4.8vw, 70px);
   font-style: normal;
   font-weight: 500;
   line-height: 1.42;
@@ -4583,6 +4588,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 70px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .block-rich-05-2__list {
+    gap: 40px;
+  }
 }
 
 .block-rich-05-2__body {
@@ -4608,13 +4618,18 @@
   gap: 110px;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .block-rich-05-2__body {
+    padding: 50px;
+  }
+}
 
-.rich-05-2__text-body, .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+.rich-05-2__text-body, .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
   text-align: center;
   width: 85%;
 }
 
-.rich-05-2__title, .rich-05-10__title, .rich-05-3__title, .rich-05-7__title, .rich-05-8__title, .rich-05-4__title {
+.rich-05-2__title, .rich-05-10__title, .rich-05-3__title, .rich-05-7__title, .rich-05-12__title, .rich-05-11__title, .rich-05-8__title, .rich-05-4__title {
   color: #636892;
   font-size: 36px;
   font-weight: 700;
@@ -4629,18 +4644,23 @@
   position: relative;
 }
 
-.block-rich-05-3__body, .block-rich-05-7__body, .block-rich-05-8__body, .block-rich-05-4__body {
+.block-rich-05-3__body, .block-rich-05-7__body, .block-rich-05-11__body, .block-rich-05-8__body, .block-rich-05-4__body {
   border-radius: 40px;
   overflow: hidden;
 }
 
-.rich-05-3__text-body, .rich-05-7__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+.rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
   position: absolute;
   top: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 65%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+    top: 5%;
+  }
 }
 
 .rich-05-3__img-block .img-rich-05-1 {
@@ -4652,6 +4672,14 @@
 
 .rich-05-4__text-body {
   width: 50%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-4__text-body {
+    left: 10%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    text-align: left;
+  }
 }
 
 .rich-05-4__img-block .img-rich-05-1 {
@@ -4697,12 +4725,18 @@
   padding: 60px 0;
 }
 
-.block-rich-05-7__body, .block-rich-05-8__body {
+.block-rich-05-7__body, .block-rich-05-11__body, .block-rich-05-8__body {
   position: relative;
 }
 
-.rich-05-7__text-body, .rich-05-8__text-body, .rich-05-10__text-body {
+.rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body {
   top: 120px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body {
+    top: 5%;
+    width: 85%;
+  }
 }
 
 .rich-05-7__img-block .img-rich-05-1 {
@@ -4710,6 +4744,16 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-8__text-body, .rich-05-10__text-body {
+    text-align: left;
+    width: 90%;
+    left: 5%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .rich-05-8__img-block .img-rich-05-1 {
@@ -4724,7 +4768,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 60px;
 }
 
 .rich-05-9__img-block {
@@ -4795,6 +4838,9 @@
   display: table;
   width: 100%;
   border-collapse: collapse;
+  border-radius: 40px;
+  background-color: #BFD3C8;
+  overflow: hidden;
 }
 
 .rich-05-10-table__row {
@@ -4806,6 +4852,7 @@
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+  padding: 40px 10px;
 }
 @media only screen and (max-width: 600px) {
   .rich-05-10-table__cell {
@@ -4820,6 +4867,38 @@
 .rich-05-10-table__cell--header {
   font-weight: bold;
   background-color: #f2f2f2;
+  background-color: #BFD3C8;
+  padding: 18px 10px;
 }
 
-/* Add responsive styles for small screens *//*# sourceMappingURL=style.css.map */
+.block-rich-05-11 {
+  padding: 80px 0;
+}
+
+.rich-05-11__img-block .img-rich-05-1 {
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.block-rich-05-12__body {
+  position: relative;
+}
+
+.rich-05-12__text-body {
+  top: 256px;
+}
+
+.rich-05-12__img-block .img-rich-05-1 {
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.rich-05-12__logo {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+}/*# sourceMappingURL=style.css.map */

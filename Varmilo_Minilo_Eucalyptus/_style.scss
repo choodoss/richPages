@@ -30,6 +30,10 @@
 
 .rich-05-1__block-container {
     margin: 0 60px;
+
+    @include tablet {
+        margin: 0 40px;
+    }
 }
 
 .rich-05-1__img-block {
@@ -50,7 +54,7 @@
     color: #636892;
     text-align: center;
     font-family: Ubuntu;
-    font-size: clamp(20px, 5vw, 70px);
+    font-size: clamp(20px, 4.8vw, 70px);
     font-style: normal;
     font-weight: 500;
     line-height: 1.42;
@@ -64,6 +68,10 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
+
+    @include tablet {
+        gap: 40px;
+    }
 }
 
 .block-rich-05-2__item {}
@@ -83,6 +91,10 @@
     align-items: center;
     gap: 110px;
     overflow: hidden;
+
+    @include tablet {
+        padding: 50px;
+    }
 }
 
 .rich-05-2__text-body {
@@ -117,6 +129,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 65%;
+
+    @include tablet {
+        top: 5%;
+    }
 }
 
 .rich-05-3__title {
@@ -147,6 +163,12 @@
 .rich-05-4__text-body {
     @extend .rich-05-3__text-body;
     width: 50%;
+
+    @include tablet {
+        left: 10%;
+        transform: translateX(0);
+        text-align: left
+    }
 }
 
 .rich-05-4__title {
@@ -209,6 +231,11 @@
 .rich-05-7__text-body {
     @extend .rich-05-3__text-body;
     top: 120px;
+
+    @include tablet {
+        top: 5%;
+        width: 85%;
+    }
 }
 
 .rich-05-7__title {
@@ -237,6 +264,13 @@
 
 .rich-05-8__text-body {
     @extend .rich-05-7__text-body;
+
+    @include tablet {
+        text-align: left;
+        width: 90%;
+        left: 5%;
+        transform: translateX(0);
+    }
 }
 
 .rich-05-8__title {
@@ -245,6 +279,8 @@
 
 .rich-05-8__text {
     @extend .rich-05-7__text;
+
+    @include tablet {}
 }
 
 .rich-05-8__img-block {
@@ -261,7 +297,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 60px;
 }
 
 .block-rich-05-9__body {
@@ -333,10 +368,14 @@
     display: table;
     width: 100%;
     border-collapse: collapse;
+    border-radius: 40px;
+    background-color: #BFD3C8;
+    overflow: hidden;
 }
 
 .rich-05-10-table__row {
     display: table-row;
+
 }
 
 .rich-05-10-table__cell {
@@ -344,6 +383,7 @@
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    padding: 40px 10px;
 
     @media only screen and (max-width: 600px) {
         display: block;
@@ -356,6 +396,67 @@
 .rich-05-10-table__cell--header {
     font-weight: bold;
     background-color: #f2f2f2;
+    background-color: #BFD3C8;
+    padding: 18px 10px;
 }
 
-/* Add responsive styles for small screens */
+.block-rich-05-11 {
+    padding: 80px 0;
+}
+
+.block-rich-05-11__body {
+    @extend .block-rich-05-7__body;
+}
+
+.rich-05-11__text-body {
+    @extend .rich-05-7__text-body;
+}
+
+.rich-05-11__title {
+    @extend .rich-05-7__title;
+}
+
+.rich-05-11__text {
+    @extend .rich-05-7__text;
+}
+
+.rich-05-11__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.block-rich-05-12 {}
+
+.block-rich-05-12__body {
+    position: relative;
+}
+
+.rich-05-12__text-body {
+    @extend .rich-05-7__text-body;
+    top: 256px;
+}
+
+.rich-05-12__title {
+    @extend .rich-05-7__title;
+}
+
+.rich-05-12__text {
+    @extend .rich-05-7__text;
+}
+
+.rich-05-12__img-block {
+    .img-rich-05-1 {
+        max-width: none;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.rich-05-12__logo {
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+}
