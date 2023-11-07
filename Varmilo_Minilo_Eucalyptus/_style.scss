@@ -16,6 +16,7 @@
     font-weight: 300;
     line-height: normal;
     background-color: #bfd3c8;
+    overflow: hidden;
 }
 
 .img-rich-05-1 {
@@ -144,6 +145,8 @@
 }
 
 .rich-05-3__img-block {
+    overflow: hidden;
+
     .img-rich-05-1 {
         max-width: none;
         object-fit: cover;
@@ -153,7 +156,7 @@
 }
 
 .block-rich-05-4__item {
-    @extend .block-rich-05-3__item;
+    position: relative;
 }
 
 .block-rich-05-4__body {
@@ -279,8 +282,6 @@
 
 .rich-05-8__text {
     @extend .rich-05-7__text;
-
-    @include tablet {}
 }
 
 .rich-05-8__img-block {
@@ -288,6 +289,8 @@
         max-width: none;
         object-fit: cover;
         width: 100%;
+
+        @include tablet {}
     }
 }
 
@@ -336,23 +339,45 @@
 
 .block-rich-05-10__body {
     position: relative;
+
+    @include tablet {
+        display: flex;
+        justify-content: center
+    }
 }
 
 .rich-05-10__text-body {
-    @extend .rich-05-8__text-body;
+    @extend .rich-05-7__text-body;
     top: 310px;
     width: 60%;
+
+    @include tablet {
+        position: relative;
+        top: auto;
+        transform: translateX(0);
+        left: auto;
+    }
 }
 
 .rich-05-10__title {
-    @extend .rich-05-2__title;
+    @extend .rich-05-7__title;
 }
 
 .rich-05-10__text {
-    @extend .rich-05-2__text;
+    @extend .rich-05-7__text;
 }
 
-.rich-05-10__img-block {}
+.rich-05-10__img-block {
+    @include tablet {}
+
+}
+
+.rich-05-10__img-block--disp-none {
+    @include tablet {
+        display: none;
+    }
+
+}
 
 .block-rich-05-10__item--row {
     display: flex;
@@ -371,6 +396,10 @@
     border-radius: 40px;
     background-color: #BFD3C8;
     overflow: hidden;
+
+    @include tablet {
+        font-size: clamp(7px, 2vw, 22px);
+    }
 }
 
 .rich-05-10-table__row {
@@ -381,9 +410,12 @@
 .rich-05-10-table__cell {
     display: table-cell;
     border: 1px solid #ddd;
-    padding: 8px;
     text-align: center;
     padding: 40px 10px;
+
+    @include tablet {
+        padding: 20px 10px;
+    }
 
     @media only screen and (max-width: 600px) {
         display: block;
@@ -437,6 +469,10 @@
 .rich-05-12__text-body {
     @extend .rich-05-7__text-body;
     top: 256px;
+
+    @include tablet {
+        top: 5%;
+    }
 }
 
 .rich-05-12__title {
@@ -459,4 +495,14 @@
     position: absolute;
     bottom: 60px;
     left: 120px;
+
+    @include tablet {
+        bottom: 30px;
+        left: 60px;
+
+        .img-rich-05-1 {
+            width: 90%;
+        }
+
+    }
 }

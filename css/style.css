@@ -4531,6 +4531,7 @@
   font-weight: 300;
   line-height: normal;
   background-color: #bfd3c8;
+  overflow: hidden;
 }
 
 .img-rich-05-1 {
@@ -4624,23 +4625,23 @@
   }
 }
 
-.rich-05-2__text-body, .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+.rich-05-2__text-body, .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-10__text-body, .rich-05-8__text-body, .rich-05-4__text-body {
   text-align: center;
   width: 85%;
 }
 
-.rich-05-2__title, .rich-05-10__title, .rich-05-3__title, .rich-05-7__title, .rich-05-12__title, .rich-05-11__title, .rich-05-8__title, .rich-05-4__title {
+.rich-05-2__title, .rich-05-3__title, .rich-05-7__title, .rich-05-12__title, .rich-05-11__title, .rich-05-10__title, .rich-05-8__title, .rich-05-4__title {
   color: #636892;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.rich-05-2__text, .rich-05-10__text {
+.rich-05-2__text {
   font-weight: 300;
 }
 
-.block-rich-05-3__item, .block-rich-05-4__item {
+.block-rich-05-3__item {
   position: relative;
 }
 
@@ -4649,7 +4650,7 @@
   overflow: hidden;
 }
 
-.rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+.rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-10__text-body, .rich-05-8__text-body, .rich-05-4__text-body {
   position: absolute;
   top: 100px;
   left: 50%;
@@ -4658,16 +4659,23 @@
   width: 65%;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body, .rich-05-4__text-body {
+  .rich-05-3__text-body, .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-10__text-body, .rich-05-8__text-body, .rich-05-4__text-body {
     top: 5%;
   }
 }
 
+.rich-05-3__img-block {
+  overflow: hidden;
+}
 .rich-05-3__img-block .img-rich-05-1 {
   max-width: none;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.block-rich-05-4__item {
+  position: relative;
 }
 
 .rich-05-4__text-body {
@@ -4729,11 +4737,11 @@
   position: relative;
 }
 
-.rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body {
+.rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-10__text-body, .rich-05-8__text-body {
   top: 120px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-8__text-body, .rich-05-10__text-body {
+  .rich-05-7__text-body, .rich-05-12__text-body, .rich-05-11__text-body, .rich-05-10__text-body, .rich-05-8__text-body {
     top: 5%;
     width: 85%;
   }
@@ -4747,7 +4755,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .rich-05-8__text-body, .rich-05-10__text-body {
+  .rich-05-8__text-body {
     text-align: left;
     width: 90%;
     left: 5%;
@@ -4762,7 +4770,6 @@
      object-fit: cover;
   width: 100%;
 }
-
 .block-rich-05-9 {
   background-image: url(../img/Varmilo_Minilo_Eucalyptus/rich_05-9-bg.jpg);
   background-repeat: no-repeat;
@@ -4814,10 +4821,35 @@
 .block-rich-05-10__body {
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .block-rich-05-10__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .rich-05-10__text-body {
   top: 310px;
   width: 60%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-10__text-body {
+    position: relative;
+    top: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-10__img-block--disp-none {
+    display: none;
+  }
 }
 
 .block-rich-05-10__item--row {
@@ -4842,6 +4874,11 @@
   background-color: #BFD3C8;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .block-rich-05-10__table {
+    font-size: clamp(7px, 2vw, 22px);
+  }
+}
 
 .rich-05-10-table__row {
   display: table-row;
@@ -4850,9 +4887,13 @@
 .rich-05-10-table__cell {
   display: table-cell;
   border: 1px solid #ddd;
-  padding: 8px;
   text-align: center;
   padding: 40px 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-10-table__cell {
+    padding: 20px 10px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .rich-05-10-table__cell {
@@ -4889,6 +4930,11 @@
 .rich-05-12__text-body {
   top: 256px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-12__text-body {
+    top: 5%;
+  }
+}
 
 .rich-05-12__img-block .img-rich-05-1 {
   max-width: none;
@@ -4901,4 +4947,13 @@
   position: absolute;
   bottom: 60px;
   left: 120px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rich-05-12__logo {
+    bottom: 30px;
+    left: 60px;
+  }
+  .rich-05-12__logo .img-rich-05-1 {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
