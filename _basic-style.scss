@@ -1,0 +1,113 @@
+.nav-body {
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.search-block {
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.search-block__title {}
+
+.search-block__input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.name {
+    color: #FFF;
+    font-family: Russo One;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main {}
+
+.section {}
+
+.rich-list {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 0;
+}
+
+.rich-item {
+    flex-basis: calc((100% - (2 * 40px)) / 3);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    @media screen and (max-width: 768px) {
+        flex-basis: calc((100% - 40px) / 2);
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-basis: 100%;
+    }
+
+
+}
+
+.rich-link {
+    flex: 1 1 auto;
+    font-style: normal;
+    color: #FFF;
+    background-color: orange;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+}
+
+.rich-link__img {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.rich-link__title {
+    flex: 0 1 auto;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}

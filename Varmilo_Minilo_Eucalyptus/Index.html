@@ -1,309 +1,999 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @font-face {
+        font-family: "DIN Pro Light";
+        src: url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.eot");
+        src: url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.woff") format("woff"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/30d8551749f6e45091a70b5a98734251.svg#DIN Pro Light") format("svg");
+    }
 
-    <link rel="stylesheet" href="../css/style.min.css">
-    <title>Varmilo Minilo Eucalyptus</title>
-</head>
+    .rich-05-1 {
+        color: #000;
+        font-family: DIN Pro Light;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        background-color: #bfd3c8;
+        overflow: hidden;
+    }
 
-<body>
-    <nav>
-        <div class="nav-body">
-            <a href="../Index.html">Back</a>
-            <div class="search-block">
-                <label for="search"></label>
-                <input id="search" type="text">
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-1 {
+            font-size: 14px;
+        }
+    }
+
+    .img-rich-05-1 {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .block-rich-05-1 {
+        position: relative;
+    }
+
+    .rich-05-1__block-container {
+        margin: 0 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-1__block-container {
+            margin: 0 40px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-1__block-container {
+            margin: 0 20px;
+        }
+    }
+
+    .rich-05-1__img-block .img-rich-05-1 {
+        max-width: none;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .rich-05-1__main-title {
+        position: absolute;
+        top: 21.7%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 90%;
+        color: #636892;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: clamp(20px, 4.8vw, 70px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.42;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-1__main-title {
+            font-size: 15.5px;
+        }
+    }
+
+    .block-rich-05-2 {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .block-rich-05-2__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .block-rich-05-2__list {
+            gap: 40px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-2__list {
+            gap: 20px;
+        }
+    }
+
+    .block-rich-05-2__body {
+        border-radius: 40px;
+        background: #F9F6ED;
+        padding-top: 136px;
+        padding-left: 102px;
+        padding-right: 102px;
+        padding-bottom: 104px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 110px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .block-rich-05-2__body {
+            padding: 50px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-2__body {
+            padding: 20px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+    }
+
+    .rich-05-2__text-body,
+    .rich-05-3__text-body,
+    .rich-05-7__text-body,
+    .rich-05-12__text-body,
+    .rich-05-11__text-body,
+    .rich-05-10__text-body,
+    .rich-05-8__text-body,
+    .rich-05-4__text-body {
+        text-align: center;
+        width: 85%;
+    }
+
+    .rich-05-2__title,
+    .rich-05-3__title,
+    .rich-05-7__title,
+    .rich-05-12__title,
+    .rich-05-11__title,
+    .rich-05-10__title,
+    .rich-05-8__title,
+    .rich-05-4__title {
+        color: #636892;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .rich-05-2__title,
+        .rich-05-3__title,
+        .rich-05-7__title,
+        .rich-05-12__title,
+        .rich-05-11__title,
+        .rich-05-10__title,
+        .rich-05-8__title,
+        .rich-05-4__title {
+            font-size: 22px;
+        }
+    }
+
+    .rich-05-2__text {
+        font-weight: 300;
+    }
+
+    .block-rich-05-3__item {
+        position: relative;
+    }
+
+    .block-rich-05-3__body,
+    .block-rich-05-7__body,
+    .block-rich-05-8__body,
+    .block-rich-05-11__body,
+    .block-rich-05-4__body {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .block-rich-05-3__body,
+        .block-rich-05-7__body,
+        .block-rich-05-8__body,
+        .block-rich-05-11__body,
+        .block-rich-05-4__body {
+            border-radius: 20px;
+        }
+    }
+
+    .rich-05-3__text-body,
+    .rich-05-7__text-body,
+    .rich-05-12__text-body,
+    .rich-05-11__text-body,
+    .rich-05-10__text-body,
+    .rich-05-8__text-body,
+    .rich-05-4__text-body {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 65%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+        .rich-05-3__text-body,
+        .rich-05-7__text-body,
+        .rich-05-12__text-body,
+        .rich-05-11__text-body,
+        .rich-05-10__text-body,
+        .rich-05-8__text-body,
+        .rich-05-4__text-body {
+            top: 5%;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .rich-05-3__text-body,
+        .rich-05-7__text-body,
+        .rich-05-12__text-body,
+        .rich-05-11__text-body,
+        .rich-05-10__text-body,
+        .rich-05-8__text-body,
+        .rich-05-4__text-body {
+            position: relative;
+            top: auto;
+            left: auto;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            width: auto;
+            background-color: #f9f6ed;
+            padding: 10px;
+        }
+    }
+
+    .rich-05-3__img-block {
+        overflow: hidden;
+    }
+
+    .rich-05-3__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-4__item {
+        position: relative;
+    }
+
+    .rich-05-4__text-body {
+        width: 50%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-4__text-body {
+            left: 10%;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-4__text-body {
+            position: relative;
+            top: auto;
+            left: auto;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            width: auto;
+            background-color: #f9f6ed;
+            padding: 10px;
+        }
+    }
+
+    .rich-05-4__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-5__body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 30px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .rich-05-5__img-block,
+    .rich-05-6__img-block {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .rich-05-5__img-block,
+        .rich-05-6__img-block {
+            border-radius: 20px;
+        }
+    }
+
+    .rich-05-5__img-block .img-rich-05-1,
+    .rich-05-6__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-6__body {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .rich-05-6__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-7,
+    .block-rich-05-8,
+    .block-rich-05-9 {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#F9F6ED), color-stop(50%, #F9F6ED), color-stop(50%, transparent), to(transparent));
+        background-image: linear-gradient(to bottom, #F9F6ED 0%, #F9F6ED 50%, transparent 50%, transparent 100%);
+        padding: 60px 0;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .block-rich-05-7,
+        .block-rich-05-8,
+        .block-rich-05-9 {
+            padding: 40px 0;
+        }
+    }
+
+    .block-rich-05-7__body,
+    .block-rich-05-8__body,
+    .block-rich-05-11__body {
+        position: relative;
+    }
+
+    .rich-05-7__text-body,
+    .rich-05-12__text-body,
+    .rich-05-11__text-body,
+    .rich-05-10__text-body,
+    .rich-05-8__text-body {
+        top: 120px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+        .rich-05-7__text-body,
+        .rich-05-12__text-body,
+        .rich-05-11__text-body,
+        .rich-05-10__text-body,
+        .rich-05-8__text-body {
+            top: 5%;
+            width: 85%;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+
+        .rich-05-7__text-body,
+        .rich-05-12__text-body,
+        .rich-05-11__text-body,
+        .rich-05-10__text-body,
+        .rich-05-8__text-body {
+            top: auto;
+        }
+    }
+
+    .rich-05-7__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-8__body::before,
+    .block-rich-05-11__body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 40%;
+        width: 100%;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .rich-05-8__text-body {
+        z-index: 3;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-8__text-body {
+            text-align: left;
+            width: 90%;
+            left: 5%;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    .rich-05-8__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-9 {
+        background-image: url(../img/Varmilo_Minilo_Eucalyptus/rich_05-9-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .rich-05-9__img-block {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .rich-05-9__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-10 {
+        background-color: #F9F6ED;
+        padding: 100px 0;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-10 {
+            padding: 40px 0;
+        }
+    }
+
+    .block-rich-05-10__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-10__list {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-10__item--mobile__table {
+            overflow-x: auto;
+        }
+    }
+
+    .block-rich-05-10__item-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .block-rich-05-10__body {
+        position: relative;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .block-rich-05-10__body {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+
+    .rich-05-10__text-body {
+        top: 310px;
+        width: 60%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-10__text-body {
+            position: relative;
+            top: auto;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            left: auto;
+            padding: 40px;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 75%;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-10__text-body {
+            top: auto;
+            width: auto;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-10__img-block--disp-none {
+            display: none;
+        }
+    }
+
+    .block-rich-05-10__item--row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 150px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-10__item--row {
+            gap: 40px;
+        }
+    }
+
+    .rich-05-10__text--bold {
+        font-weight: 700;
+    }
+
+    .block-rich-05-10__table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 40px;
+        background-color: #BFD3C8;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .block-rich-05-10__table {
+            font-size: clamp(7px, 2vw, 22px);
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-10__table {
+            overflow: scroll;
+            width: 700px;
+        }
+    }
+
+    .rich-05-10-table__row {
+        display: table-row;
+    }
+
+    .rich-05-10-table__cell {
+        display: table-cell;
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 40px 10px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-10-table__cell {
+            padding: 20px 10px;
+        }
+    }
+
+    .rich-05-10-table__row--header,
+    .rich-05-10-table__cell--header {
+        font-weight: bold;
+        background-color: #f2f2f2;
+        background-color: #BFD3C8;
+        padding: 18px 10px;
+    }
+
+    .block-rich-05-11 {
+        padding: 80px 0;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .block-rich-05-11 {
+            padding: 40px 0;
+        }
+    }
+
+    .block-rich-05-11__body::before {
+        height: 55%;
+    }
+
+    .rich-05-11__text-body {
+        z-index: 3;
+    }
+
+    .rich-05-11__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .block-rich-05-12__body {
+        position: relative;
+    }
+
+    .rich-05-12__text-body {
+        top: 256px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-12__text-body {
+            top: 5%;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-12__text-body {
+            top: auto;
+        }
+    }
+
+    .rich-05-12__img-block .img-rich-05-1 {
+        max-width: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .rich-05-12__logo {
+        position: absolute;
+        bottom: 60px;
+        left: 120px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .rich-05-12__logo {
+            bottom: 30px;
+            left: 60px;
+        }
+
+        .rich-05-12__logo .img-rich-05-1 {
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .rich-05-12__logo {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .rich-05-12__logo .img-rich-05-1 {
+            width: 50%;
+        }
+    }
+</style>
+<section class="rich-05-1">
+    <div class="block-rich-05-1">
+        <div class="rich-05-1__img-block">
+            <img src="../img/Varmilo_Minilo_Eucalyptus/rich_05--main.jpg" alt="#" class="img-rich-05-1" width="1520"
+                height="2438">
+        </div>
+        <div class="rich-05-1__main-title">Клавіатура Varmilo Minilo Eucalyptus
+
+        </div>
+    </div>
+    <div class="block-rich-05-2">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-2__list">
+                <div class="block-rich-05-2__item">
+                    <div class="block-rich-05-2__body">
+                        <div class="rich-05-2__text-body">
+                            <div class="rich-05-2__title">Витвір мистецтва за еталонами Morandi</div>
+                            <div class="rich-05-2__text">
+                                Дизайнерська концепція серії механічних клавіатур Varmilo Minilo заснована на
+                                еталонній
+                                колірній схемі Morandi, розробленій італійським художником Джорджо Моранді, що
+                                гармонізує та збалансовує між собою високоякісні сірі тони, вивільняючи
+                                заспокійливу
+                                елегантність.</div>
+                        </div>
+                        <div class="rich-05-2__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2.jpg" alt="#"
+                                height="722" width="1195">
+                        </div>
+                    </div>
+                </div>
+                <div class="block-rich-05-3__item">
+                    <div class="block-rich-05-3__body">
+                        <div class="rich-05-3__text-body">
+                            <div class="rich-05-3__title">Кольорова гама</div>
+                            <div class="rich-05-3__text">Кольорова гама Minilo Eucalyptus містить сповнені
+                                життєвої сили сіро-зелений, сіро-фіолетовий і молочний тони, в основі яких, –
+                                природні відтінки евкаліпту. Продумані кольори ідеально гармонізовані з
+                                RGB-підсвічуванням..</div>
+                        </div>
+                        <div class="rich-05-3__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-02.jpg" alt="#"
+                                height="1723" width="1400">
+                        </div>
+                    </div>
+                </div>
+                <div class="block-rich-05-4__item">
+                    <div class="block-rich-05-4__body">
+                        <div class="rich-05-4__text-body">
+                            <div class="rich-05-4__title">Мінімалізм і стиль простору</div>
+                            <div class="rich-05-4__text">Varmilo Minilo Eucalyptus має компактний формфактор
+                                65 % (67 клавіш). Цей мінімалістський розмір зберігає головні функціональні
+                                клавіші зі стрілками та велику кількість варіантів комбінацій клавіш
+                                швидкого доступу.</div>
+                        </div>
+                        <div class="rich-05-4__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-03.jpg" alt="#"
+                                height="1970" width="1400">
+                        </div>
+                    </div>
+                </div>
+                <div class="block-rich-05-5__item">
+                    <div class="block-rich-05-5__body">
+                        <div class="rich-05-5__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-04.jpg" alt="#"
+                                height="511" width="685">
+                        </div>
+                        <div class="rich-05-5__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-05.jpg" alt="#"
+                                height="511" width="685">
+                        </div>
+                    </div>
+                </div>
+                <div class="block-rich-05-6__item">
+                    <div class="block-rich-05-6__body">
+                        <div class="rich-05-6__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-06.jpg" alt="#"
+                                height="934" width="1400">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <main class="main">
-        <section class="rich-05-1">
-            <div class="block-rich-05-1">
-                <div class="rich-05-1__img-block">
-                    <img src="../img/Varmilo_Minilo_Eucalyptus/rich_05--main.jpg" alt="#" class="img-rich-05-1"
-                        width="1520" height="2438">
+    </div>
+    <div class="block-rich-05-7">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-7__body">
+                <div class="rich-05-7__text-body">
+                    <div class="rich-05-7__title">Надійність і довговічність у кожному дотику</div>
+                    <div class="rich-05-7__text">
+                        Незмінною особливістю клавіатур Varmilo залишаються найкращі технічні функції,
+                        що в цій моделі доповнено інноваційними родзинками. Улюблені всіма користувачами
+                        Varmilo «шовкові» клавішні ковпачки дають ще більше приводів для захвату.
+                        Новітня технологія потовщеного дизайну ковпачків Shurikey Double Shot – це 1,5
+                        мм товщина, деталізовані текстуровані символи та надійність і довговічність
+                        друку.</div>
                 </div>
-                <div class="rich-05-1__main-title">Клавіатура Varmilo Minilo Eucalyptus
-
-                </div>
-            </div>
-            <div class="block-rich-05-2">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-2__list">
-                        <div class="block-rich-05-2__item">
-                            <div class="block-rich-05-2__body">
-                                <div class="rich-05-2__text-body">
-                                    <div class="rich-05-2__title">Витвір мистецтва за еталонами Morandi</div>
-                                    <div class="rich-05-2__text">
-                                        Дизайнерська концепція серії механічних клавіатур Varmilo Minilo заснована на
-                                        еталонній
-                                        колірній схемі Morandi, розробленій італійським художником Джорджо Моранді, що
-                                        гармонізує та збалансовує між собою високоякісні сірі тони, вивільняючи
-                                        заспокійливу
-                                        елегантність.</div>
-                                </div>
-                                <div class="rich-05-2__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2.jpg"
-                                        alt="#" height="722" width="1195">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-3__item">
-                            <div class="block-rich-05-3__body">
-                                <div class="rich-05-3__text-body">
-                                    <div class="rich-05-3__title">Кольорова гама</div>
-                                    <div class="rich-05-3__text">Кольорова гама Minilo Eucalyptus містить сповнені
-                                        життєвої сили сіро-зелений, сіро-фіолетовий і молочний тони, в основі яких, –
-                                        природні відтінки евкаліпту. Продумані кольори ідеально гармонізовані з
-                                        RGB-підсвічуванням..</div>
-                                </div>
-                                <div class="rich-05-3__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-02.jpg"
-                                        alt="#" height="1723" width="1400">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-4__item">
-                            <div class="block-rich-05-4__body">
-                                <div class="rich-05-4__text-body">
-                                    <div class="rich-05-4__title">Мінімалізм і стиль простору</div>
-                                    <div class="rich-05-4__text">Varmilo Minilo Eucalyptus має компактний формфактор
-                                        65 % (67 клавіш). Цей мінімалістський розмір зберігає головні функціональні
-                                        клавіші зі стрілками та велику кількість варіантів комбінацій клавіш
-                                        швидкого доступу.</div>
-                                </div>
-                                <div class="rich-05-4__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-03.jpg"
-                                        alt="#" height="1970" width="1400">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-5__item">
-                            <div class="block-rich-05-5__body">
-                                <div class="rich-05-5__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-04.jpg"
-                                        alt="#" height="511" width="685">
-                                </div>
-                                <div class="rich-05-5__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-05.jpg"
-                                        alt="#" height="511" width="685">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-6__item">
-                            <div class="block-rich-05-6__body">
-                                <div class="rich-05-6__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-2-06.jpg"
-                                        alt="#" height="934" width="1400">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="rich-05-7__img-block">
+                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-7.jpg" alt="#"
+                        height="1970" width="1400">
                 </div>
             </div>
-            <div class="block-rich-05-7">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-7__body">
-                        <div class="rich-05-7__text-body">
-                            <div class="rich-05-7__title">Надійність і довговічність у кожному дотику</div>
-                            <div class="rich-05-7__text">
-                                Незмінною особливістю клавіатур Varmilo залишаються найкращі технічні функції,
-                                що в цій моделі доповнено інноваційними родзинками. Улюблені всіма користувачами
-                                Varmilo «шовкові» клавішні ковпачки дають ще більше приводів для захвату.
-                                Новітня технологія потовщеного дизайну ковпачків Shurikey Double Shot – це 1,5
-                                мм товщина, деталізовані текстуровані символи та надійність і довговічність
-                                друку.</div>
+        </div>
+    </div>
+    <div class="block-rich-05-8">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-8__body">
+                <div class="rich-05-8__text-body">
+                    <div class="rich-05-8__title">Унікальні технології довговічності</div>
+                    <div class="rich-05-8__text">Minilo використовує структуру подвійного звукопоглинання Type
+                        Cool, що забезпечує заповнення простору між пластиною та друкованою платою, спіненою
+                        силіконовою підкладкою EVA, що поглинає звуки під час натискання та робить процес друку
+                        тихішим, як порівняти зі звичайними механічними клавіатурами.</div>
+                </div>
+                <div class="rich-05-8__img-block">
+                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-8.jpg" alt="#"
+                        height="1970" width="1400">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-rich-05-9">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-9__body">
+                <div class="rich-05-9__img-block">
+                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-9.jpg" alt="#"
+                        height="1970" width="1400">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-rich-05-10">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-10__list">
+                <div class="block-rich-05-10__item">
+                    <div class="block-rich-05-10__body">
+                        <div class="rich-05-10__text-body">
+                            <div class="rich-05-10__title">Механічна клавіатура з Hot-Swap перемикачами</div>
+                            <div class="rich-05-10__text">Технологія механічної клавіатури передбачає
+                                наявність
+                                перемикачів (світчів) під кожною клавішею, від типу яких залежить тиск,
+                                клацання та
+                                відгук клавіш під час друку. У Varmilo Minilo Eucalyptus можна вибрати
+                                механічні
+                                перемикачі з функцією гарячої заміни (Hot-Swap), що дає змогу легко
+                                замінювати
+                                світчі на будь-які перемикачі Cherry-типу: </div>
                         </div>
-                        <div class="rich-05-7__img-block">
-                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-7.jpg" alt="#"
+                        <div class="rich-05-10__img-block rich-05-10__img-block--disp-none">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-10.jpg" alt="#"
                                 height="1970" width="1400">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="block-rich-05-8">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-8__body">
-                        <div class="rich-05-8__text-body">
-                            <div class="rich-05-8__title">Унікальні технології довговічності</div>
-                            <div class="rich-05-8__text">Minilo використовує структуру подвійного звукопоглинання Type
-                                Cool, що забезпечує заповнення простору між пластиною та друкованою платою, спіненою
-                                силіконовою підкладкою EVA, що поглинає звуки під час натискання та робить процес друку
-                                тихішим, як порівняти зі звичайними механічними клавіатурами.</div>
+                <div class="block-rich-05-10__item block-rich-05-10__item--row">
+                    <div class="block-rich-05-10__item-body">
+                        <div class="rich-05-10__text rich-05-10__text--bold">Gateron G Pro 2.0</div>
+                        <div class="rich-05-10__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-11.png" alt="#"
+                                height="243" width="265">
                         </div>
-                        <div class="rich-05-8__img-block">
-                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-8.jpg" alt="#"
-                                height="1970" width="1400">
+                    </div>
+                    <div class="block-rich-05-10__item-body">
+                        <div class="rich-05-10__text rich-05-10__text--bold">Prestige Kailh</div>
+                        <div class="rich-05-10__img-block">
+                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-12.png" alt="#"
+                                height="243" width="265">
+                        </div>
+                    </div>
+                </div>
+                <div class="block-rich-05-10__item block-rich-05-10__item--mobile__table">
+                    <div class="block-rich-05-10__table">
+                        <div class="rich-05-10-table__row rich-05-10-table__row--header">
+                            <div class="rich-05-10-table__cell"></div>
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Gateron G Pro 2.0
+                                Brown</div>
+                            <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Red</div>
+                            <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Silver</div>
+                            <div class="rich-05-10-table__cell">Gateron G Pro 2.0 White</div>
+                            <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Yellow</div>
+                            <div class="rich-05-10-table__cell">Kailh Prestige Light</div>
+                            <div class="rich-05-10-table__cell">Kailh Prestige Red</div>
+                        </div>
+                        <div class="rich-05-10-table__row ">
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Сила натискання
+                            </div>
+                            <div class="rich-05-10-table__cell">55 ± 15 г</div>
+                            <div class="rich-05-10-table__cell">45 ± 15 г</div>
+                            <div class="rich-05-10-table__cell">42 ± 15 г</div>
+                            <div class="rich-05-10-table__cell">38 ± 15 г</div>
+                            <div class="rich-05-10-table__cell">50 ± 5 г</div>
+                            <div class="rich-05-10-table__cell">37 г</div>
+                            <div class="rich-05-10-table__cell">45 г</div>
+                        </div>
+                        <div class="rich-05-10-table__row">
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Хід до
+                                спрацьовування</div>
+                            <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
+                            <div class="rich-05-10-table__cell">2 ± 0,6 мм</div>
+                            <div class="rich-05-10-table__cell">1,2 ± 0,3 мм</div>
+                            <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
+                            <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
+                            <div class="rich-05-10-table__cell">1,8 мм</div>
+                            <div class="rich-05-10-table__cell">1,8 мм</div>
+                        </div>
+                        <div class="rich-05-10-table__row">
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Загальний хід
+                            </div>
+                            <div class="rich-05-10-table__cell">4 ± 0,4 мм</div>
+                            <div class="rich-05-10-table__cell">4 ± 0,4 мм</div>
+                            <div class="rich-05-10-table__cell">3,4 ± 0,4 мм</div>
+                            <div class="rich-05-10-table__cell">4,0 мм</div>
+                            <div class="rich-05-10-table__cell">4,0 мм</div>
+                            <div class="rich-05-10-table__cell">3,6 мм</div>
+                            <div class="rich-05-10-table__cell">3,6 мм</div>
+                        </div>
+                        <div class="rich-05-10-table__row ">
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Тип</div>
+                            <div class="rich-05-10-table__cell">тактильні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                            <div class="rich-05-10-table__cell">лінійні</div>
+                        </div>
+                        <div class="rich-05-10-table__row ">
+                            <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Звук</div>
+                            <div class="rich-05-10-table__cell">помірний</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
+                            <div class="rich-05-10-table__cell">тихий</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="block-rich-05-9">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-9__body">
-                        <div class="rich-05-9__img-block">
-                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-9.jpg" alt="#"
-                                height="1970" width="1400">
-                        </div>
+        </div>
+    </div>
+    <div class="block-rich-05-11">
+        <div class="rich-05-1__block-container">
+            <div class="block-rich-05-11__body">
+                <div class="rich-05-11__text-body">
+                    <div class="rich-05-11__title">Мистецтво, реалізоване у високих технологіях</div>
+                    <div class="rich-05-11__text">
+                        Слоган Varmilo – «Клавіатура митців» передає підхід Varmilo до створення механічних
+                        клавіатур та розкриває їхню унікальність. Виробник зосереджується не лише на
+                        розробленні та впровадженні нових функцій, а й на тому, щоби клавіатура була справжнім
+                        витвором мистецтва завдяки яскравому й унікальному дизайну з майже ручним розписом.
                     </div>
                 </div>
-            </div>
-            <div class="block-rich-05-10">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-10__list">
-                        <div class="block-rich-05-10__item">
-                            <div class="block-rich-05-10__body">
-                                <div class="rich-05-10__text-body">
-                                    <div class="rich-05-10__title">Механічна клавіатура з Hot-Swap перемикачами</div>
-                                    <div class="rich-05-10__text">Технологія механічної клавіатури передбачає
-                                        наявність
-                                        перемикачів (світчів) під кожною клавішею, від типу яких залежить тиск,
-                                        клацання та
-                                        відгук клавіш під час друку. У Varmilo Minilo Eucalyptus можна вибрати
-                                        механічні
-                                        перемикачі з функцією гарячої заміни (Hot-Swap), що дає змогу легко
-                                        замінювати
-                                        світчі на будь-які перемикачі Cherry-типу: </div>
-                                </div>
-                                <div class="rich-05-10__img-block rich-05-10__img-block--disp-none">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-10.jpg"
-                                        alt="#" height="1970" width="1400">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-10__item block-rich-05-10__item--row">
-                            <div class="block-rich-05-10__item-body">
-                                <div class="rich-05-10__text rich-05-10__text--bold">Gateron G Pro 2.0</div>
-                                <div class="rich-05-10__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-11.png"
-                                        alt="#" height="243" width="265">
-                                </div>
-                            </div>
-                            <div class="block-rich-05-10__item-body">
-                                <div class="rich-05-10__text rich-05-10__text--bold">Prestige Kailh</div>
-                                <div class="rich-05-10__img-block">
-                                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-12.png"
-                                        alt="#" height="243" width="265">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-rich-05-10__item block-rich-05-10__item--mobile__table">
-                            <div class="block-rich-05-10__table">
-                                <div class="rich-05-10-table__row rich-05-10-table__row--header">
-                                    <div class="rich-05-10-table__cell"></div>
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Gateron G Pro 2.0
-                                        Brown</div>
-                                    <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Red</div>
-                                    <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Silver</div>
-                                    <div class="rich-05-10-table__cell">Gateron G Pro 2.0 White</div>
-                                    <div class="rich-05-10-table__cell">Gateron G Pro 2.0 Yellow</div>
-                                    <div class="rich-05-10-table__cell">Kailh Prestige Light</div>
-                                    <div class="rich-05-10-table__cell">Kailh Prestige Red</div>
-                                </div>
-                                <div class="rich-05-10-table__row ">
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Сила натискання
-                                    </div>
-                                    <div class="rich-05-10-table__cell">55 ± 15 г</div>
-                                    <div class="rich-05-10-table__cell">45 ± 15 г</div>
-                                    <div class="rich-05-10-table__cell">42 ± 15 г</div>
-                                    <div class="rich-05-10-table__cell">38 ± 15 г</div>
-                                    <div class="rich-05-10-table__cell">50 ± 5 г</div>
-                                    <div class="rich-05-10-table__cell">37 г</div>
-                                    <div class="rich-05-10-table__cell">45 г</div>
-                                </div>
-                                <div class="rich-05-10-table__row">
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Хід до
-                                        спрацьовування</div>
-                                    <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
-                                    <div class="rich-05-10-table__cell">2 ± 0,6 мм</div>
-                                    <div class="rich-05-10-table__cell">1,2 ± 0,3 мм</div>
-                                    <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
-                                    <div class="rich-05-10-table__cell">2,0 ± 0,6 мм</div>
-                                    <div class="rich-05-10-table__cell">1,8 мм</div>
-                                    <div class="rich-05-10-table__cell">1,8 мм</div>
-                                </div>
-                                <div class="rich-05-10-table__row">
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Загальний хід
-                                    </div>
-                                    <div class="rich-05-10-table__cell">4 ± 0,4 мм</div>
-                                    <div class="rich-05-10-table__cell">4 ± 0,4 мм</div>
-                                    <div class="rich-05-10-table__cell">3,4 ± 0,4 мм</div>
-                                    <div class="rich-05-10-table__cell">4,0 мм</div>
-                                    <div class="rich-05-10-table__cell">4,0 мм</div>
-                                    <div class="rich-05-10-table__cell">3,6 мм</div>
-                                    <div class="rich-05-10-table__cell">3,6 мм</div>
-                                </div>
-                                <div class="rich-05-10-table__row ">
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Тип</div>
-                                    <div class="rich-05-10-table__cell">тактильні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                    <div class="rich-05-10-table__cell">лінійні</div>
-                                </div>
-                                <div class="rich-05-10-table__row ">
-                                    <div class="rich-05-10-table__cell rich-05-10-table__cell--header">Звук</div>
-                                    <div class="rich-05-10-table__cell">помірний</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                    <div class="rich-05-10-table__cell">тихий</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="rich-05-11__img-block">
+                    <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-13.jpg" alt="#"
+                        height="1410" width="1400">
                 </div>
             </div>
-            <div class="block-rich-05-11">
-                <div class="rich-05-1__block-container">
-                    <div class="block-rich-05-11__body">
-                        <div class="rich-05-11__text-body">
-                            <div class="rich-05-11__title">Мистецтво, реалізоване у високих технологіях</div>
-                            <div class="rich-05-11__text">
-                                Слоган Varmilo – «Клавіатура митців» передає підхід Varmilo до створення механічних
-                                клавіатур та розкриває їхню унікальність. Виробник зосереджується не лише на
-                                розробленні та впровадженні нових функцій, а й на тому, щоби клавіатура була справжнім
-                                витвором мистецтва завдяки яскравому й унікальному дизайну з майже ручним розписом.
-                            </div>
-                        </div>
-                        <div class="rich-05-11__img-block">
-                            <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-13.jpg" alt="#"
-                                height="1410" width="1400">
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <div class="block-rich-05-12">
+        <div class="block-rich-05-12__body">
+            <div class="rich-05-12__text-body">
+                <div class="rich-05-12__title">Світовий бренд у твоєму просторі</div>
+                <div class="rich-05-12__text">
+                    Varmilo (Варміло) – бренд, що виробляє комп’ютерну периферію та належить Shenzhen
+                    Zhihaihe Technology Co., Ltd. Компанію було засновано 2012 року. Свій шлях вона
+                    розпочала з кастомізації клавіатур. Сьогодні Varmilo – передовий виробник механічних
+                    клавіатур із професійною командою дизайнерів і розробників.
                 </div>
             </div>
-            <div class="block-rich-05-12">
-                <div class="block-rich-05-12__body">
-                    <div class="rich-05-12__text-body">
-                        <div class="rich-05-12__title">Світовий бренд у твоєму просторі</div>
-                        <div class="rich-05-12__text">
-                            Varmilo (Варміло) – бренд, що виробляє комп’ютерну периферію та належить Shenzhen
-                            Zhihaihe Technology Co., Ltd. Компанію було засновано 2012 року. Свій шлях вона
-                            розпочала з кастомізації клавіатур. Сьогодні Varmilo – передовий виробник механічних
-                            клавіатур із професійною командою дизайнерів і розробників.
-                        </div>
-                    </div>
-                    <div class="rich-05-12__img-block">
-                        <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-14.jpg" alt="#"
-                            height="1410" width="1400">
-                    </div>
-                    <div class="rich-05-12__logo">
-                        <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/Varmilo_w 3.svg" alt="#"
-                            height="66" width="371">
-                    </div>
-                </div>
+            <div class="rich-05-12__img-block">
+                <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/rich_05-14.jpg" alt="#" height="1410"
+                    width="1400">
             </div>
+            <div class="rich-05-12__logo">
+                <img class="img-rich-05-1" src="../img/Varmilo_Minilo_Eucalyptus/Varmilo_w 3.svg" alt="#" height="66"
+                    width="371">
             </div>
-        </section>
-    </main>
-</body>
-
-</html>
+        </div>
+    </div>
+    </div>
+</section>

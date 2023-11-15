@@ -249,6 +249,7 @@
 .block-rich-05-5__body {
     display: flex;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .rich-05-5__img-block {
@@ -505,6 +506,10 @@
         font-size: clamp(7px, 2vw, 22px);
     }
 
+    @include mobile {
+        overflow: scroll;
+        width: 700px;
+    }
 }
 
 .rich-05-10-table__row {
@@ -520,12 +525,6 @@
 
     @include tablet {
         padding: 20px 10px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
     }
 }
 

@@ -40,7 +40,7 @@
 .name {
   color: #FFF;
   font-family: Russo One;
-  font-size: 5rem;
+  font-size: clamp(2rem, 4vw, 5rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -79,6 +79,18 @@
           flex-direction: column;
   overflow: hidden;
   border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .rich-item {
+    -ms-flex-preferred-size: calc((100% - 40px) / 2);
+        flex-basis: calc((100% - 40px) / 2);
+  }
+}
+@media screen and (max-width: 480px) {
+  .rich-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .rich-link {
@@ -129,6 +141,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .rich-01-1 {
@@ -4768,6 +4781,9 @@
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rich-05-5__img-block, .rich-05-6__img-block {
@@ -5006,6 +5022,12 @@
     font-size: clamp(7px, 2vw, 22px);
   }
 }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .block-rich-05-10__table {
+    overflow: scroll;
+    width: 700px;
+  }
+}
 
 .rich-05-10-table__row {
   display: table-row;
@@ -5020,14 +5042,6 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .rich-05-10-table__cell {
     padding: 20px 10px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .rich-05-10-table__cell {
-    display: block;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
 }
 
